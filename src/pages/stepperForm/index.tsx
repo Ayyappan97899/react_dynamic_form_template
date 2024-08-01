@@ -18,6 +18,8 @@ const StepperPage = () => {
   const [activeStep, setActiveStep] = useState<number>(0);
   const { onChange } = useOnChangeHandler();
 
+  const hj = "";
+
   const steps = (props?: any) => [
     {
       label: "Contact Information",
