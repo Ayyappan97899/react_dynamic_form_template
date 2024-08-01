@@ -2,8 +2,6 @@ import { BrowserRouter } from "react-router-dom";
 import Routes from "./routes";
 
 function App() {
-  const jk = "";
-
   return (
     <BrowserRouter>
       <Routes />
