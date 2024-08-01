@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   Checkbox,
   FormControl,
@@ -79,8 +78,8 @@ const AppCheckbox = ({
           color: isError
             ? theme.palette.error.main
             : isDisabled
-            ? theme.palette.text.disabled
-            : theme.palette.text.secondary,
+              ? theme.palette.text.disabled
+              : theme.palette.text.secondary,
           [`& .MuiTypography-root`]: {
             fontSize: "0.875rem",
           },

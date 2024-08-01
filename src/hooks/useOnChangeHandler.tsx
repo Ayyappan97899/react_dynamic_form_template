@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 import { getDateFormat, getTimeFormat } from "src/utils/common";
 
 interface onChangeProps {
@@ -29,7 +27,7 @@ const useOnChangeHandler = () => {
         name,
         selectValue?.map((data: any) => {
           return data.id;
-        })
+        }),
       );
     } else if (type === "ToggleField" || type === "CheckBoxField") {
       const { checked } = event.target;

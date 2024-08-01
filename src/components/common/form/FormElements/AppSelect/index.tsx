@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   Autocomplete,
   FormControl,
@@ -50,7 +49,7 @@ const AppSelect = ({
 }: AppSelectProps) => {
   const [isFocused, setIsFocused] = useState<boolean>(false);
   let selectedOption = meta?.[name]?.filter(
-    (_: any) => +_?.id === +formValues?.[name]
+    (_: any) => +_?.id === +formValues?.[name],
   );
 
   selectedOption = selectedOption?.[0] || null;

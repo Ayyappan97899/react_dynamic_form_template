@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from "react";
 import Stepper from "@mui/material/Stepper";
 import Step from "@mui/material/Step";
@@ -34,7 +33,7 @@ export default function StepperContainer({
           {stepsData?.map(
             (
               data: { label: string; content: React.ReactNode },
-              index: number
+              index: number,
             ) => (
               <Step key={index}>
                 <StepLabel
@@ -54,7 +53,7 @@ export default function StepperContainer({
                   {data?.label}
                 </StepLabel>
               </Step>
-            )
+            ),
           )}
         </Stepper>
       </Box>

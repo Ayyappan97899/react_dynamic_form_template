@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import AppCheckbox from "./AppCheckBox";
 import AppDateAndTimePicker from "./AppDateAndTimePicker";
 import AppDatePicker from "./AppDatePicker";

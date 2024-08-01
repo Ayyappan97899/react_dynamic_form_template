@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button, Container, IconButton, Typography } from "@mui/material";
 import { FieldArray, Form, Formik } from "formik";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
@@ -19,7 +18,7 @@ function ArrayFormPage() {
       <Formik
         initialValues={getInitialFormValuesForArray(
           fieldsForArray,
-          "qualification"
+          "qualification",
         )}
         validationSchema={validationSchemaForArray}
         onSubmit={(values) => console.log("submit", values)}

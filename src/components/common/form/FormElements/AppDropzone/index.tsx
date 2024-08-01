@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   FormControl,
   FormHelperText,
@@ -71,11 +70,11 @@ const AppDropZone = ({
         isError
           ? theme.palette.error.main
           : isFocused
-          ? theme.palette.primary.main
-          : "#CBD2DC"
+            ? theme.palette.primary.main
+            : "#CBD2DC"
       }`,
     }),
-    [isFocused, theme, isError, baseStyle]
+    [isFocused, theme, isError, baseStyle],
   );
 
   const ModifiedName = arrayName ? `${arrayName}[${arrayIndex}].${name}` : name;

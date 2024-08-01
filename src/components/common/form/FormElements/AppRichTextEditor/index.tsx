@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { Box, FormHelperText, Typography, useTheme } from "@mui/material";
@@ -48,10 +47,10 @@ function AppRichTextEditor({
           color: isError
             ? "error.main"
             : isDisabled
-            ? "text.disabled"
-            : isFocused
-            ? "primary.main"
-            : "text.secondary",
+              ? "text.disabled"
+              : isFocused
+                ? "primary.main"
+                : "text.secondary",
         }}
       >
         {`${label} ${isRequired ? "*" : ""}`}
@@ -101,8 +100,8 @@ function AppRichTextEditor({
             isError
               ? theme.palette.error.main
               : isFocused
-              ? theme.palette.primary.main
-              : "rgba(0, 0, 0, 0.23)"
+                ? theme.palette.primary.main
+                : "rgba(0, 0, 0, 0.23)"
           };
           border-width:1px 1px 0;
         }
@@ -114,8 +113,8 @@ function AppRichTextEditor({
             isError
               ? theme.palette.error.main
               : isFocused
-              ? theme.palette.primary.main
-              : "rgba(0, 0, 0, 0.23)"
+                ? theme.palette.primary.main
+                : "rgba(0, 0, 0, 0.23)"
           };
           border-width:1px 1px 1px;
         }

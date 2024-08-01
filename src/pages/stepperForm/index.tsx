@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button, Container } from "@mui/material";
 import { useState } from "react";
 import { Form, Formik } from "formik";
@@ -17,8 +16,6 @@ import AppHStack from "src/components/common/stack/AppHStack";
 const StepperPage = () => {
   const [activeStep, setActiveStep] = useState<number>(0);
   const { onChange } = useOnChangeHandler();
-
-  const hj = "";
 
   const steps = (props?: any) => [
     {

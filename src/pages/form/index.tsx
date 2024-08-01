@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button, Container } from "@mui/material";
 import { Form, Formik } from "formik";
 import FormContainer from "src/components/common/form/FormContainer";

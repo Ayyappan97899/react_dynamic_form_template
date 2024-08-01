@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Typography } from "@mui/material";
 import FormContainer from "src/components/common/form/FormContainer";
 import { contactInformationFields } from "src/constant";

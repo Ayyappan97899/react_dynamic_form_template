@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   FormControl,
   FormControlLabel,
@@ -79,7 +78,7 @@ function AppRadioInput({
                     control={<Radio color="primary" />}
                   />
                 );
-              }
+              },
             )}
           </Stack>
         </RadioGroup>

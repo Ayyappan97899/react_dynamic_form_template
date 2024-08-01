@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   FormControl,
   FormHelperText,
@@ -148,8 +147,8 @@ const AppFileInput = ({
             isError
               ? theme.palette.error.main
               : isFocused
-              ? theme.palette.primary.main
-              : "#00224B33"
+                ? theme.palette.primary.main
+                : "#00224B33"
           }`,
           borderRadius: "6px",
           padding: files?.length > 0 ? "9.2px 0px" : "11.9px 0px",

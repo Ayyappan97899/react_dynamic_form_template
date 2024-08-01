@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 export const getDateFormat = (event: { $d: Date }) => {
   const date = new Date(event?.$d);
   const format =
